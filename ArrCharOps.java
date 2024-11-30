@@ -80,21 +80,21 @@ public class ArrCharOps {
     public static int indexOf(char[] arr, char ch, int fromIndex) {
         int a = -1;
 
-        for (int i = fromIndex - 1; i >= 0; i--){
+      /*  for (int i = fromIndex - 1; i >= 0; i--){
             if (arr [i] == ch) {
               a = i;
             }
         }
         if (a !=-1){
             return a;
-        }
-        else{
+        }*/
+      //  else{
         for (int i =fromIndex; i<arr.length; i++) {
             if (arr [i]== ch) {
                 a = i;
             }
         }
-       } 
+       
         return a;
     }
 
@@ -197,8 +197,12 @@ public class ArrCharOps {
             return 0;
         } 
 
-        else {
+        if (str1.length() ==0 || str2.length() ==0){
             return -2;
         }
-    } 
+        return -2;
+    }
 }
+
+
+

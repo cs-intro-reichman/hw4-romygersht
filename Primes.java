@@ -22,6 +22,6 @@ public class Primes {
         }
        
         double pre = (double)countP/num*100;
-        System.out.println ("There are "+countP+" primes between 2 and "+num+" ("+pre+"% are primes)"); 
+        System.out.println ("There are "+countP+" primes between 2 and "+num+" ("+(int)pre+"% are primes)"); 
     }
 }
