@@ -18,15 +18,40 @@ public class MyString {
 
     /** Returns the lowercase version of the given string. */
     public static String lowerCase(String str) {
-        String low = "abcdefghijklmnopqrstuvwsyz";
-        String up = "ABCDEFJ"
-        
-        return null;
+
+        StringBuilder newString = new StringBuilder();
+
+        for (int i = 0; i<str.length(); i++) {
+            char ch = str.charAt(i);
+            if (ch >= 'A' && ch <= 'Z') { 
+                ch = (char) (ch + 'a' - 'A'); 
+            }
+            newString.append(ch);;
+        }
+        return newString.toString();
     }
 
     /** If str1 contains str2, returns true; otherwise returns false. */
+
     public static boolean contains(String str1, String str2) {
-        // Replace the following statement with your code
+        int count = 0;
+
+        if (str1.length()<str2.length()) {
+            return false;
+        }
+
+        for (int i = 0; i <= str1.length() - str2.length(); i++) {
+            while (count < str2.length() && str1.charAt(i+count)== str2.charAt(count)) {
+             count++;
+            }
+        }
+
+        if (count == str2.length()) {
+            return true;
+        }
+        
+        else {
         return false;
+        }
     }
 }
