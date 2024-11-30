@@ -22,6 +22,7 @@ public class ArrCharOps {
         System.out.println(compareTo("Zoo", "zoo")); // -1
         System.out.println(hashCode(arr1));
         System.out.println(hashCode(arr2));
+        System.out.println(compareTo("abc", ""));
     }
 
     /** Prints the given array of characters, and moves the cursor to the next line.
