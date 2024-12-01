@@ -186,27 +186,24 @@ public class ArrCharOps {
             return 1;
         }
 
+
         for (int i=0; i<str1.length(); i++){
             if ((int)str1.charAt(i) > (int)str2.charAt(i)) {
-             return 1;
-            }
-            if ((int)str1.charAt(i) < (int)str2.charAt(i)) {
+                return 1; 
+    
+            } else if ((int)str1.charAt(i) < (int)str2.charAt(i)) {
                 return -1;
-               }
-            if ((int)str1.charAt(i) == (int)str2.charAt(i)) {
+            } else {
                 count++;
-               }
-        }  
-        if (count == str1.length()) {
-            return 0;
+            }
         } 
 
-        if (str1.length() ==0 || str2.length() ==0){
-            return -2;
-        }
-        return -2;
+     //   if (str1.length() ==0 || str2.length() ==0){
+      //      return -2;
+      //  }
+        return 0;
     }
-}
+ }
 
 
 
