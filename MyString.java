@@ -35,11 +35,6 @@ public class MyString {
 
     public static boolean contains(String str1, String str2) {
 
-
-        //if (str1.length()<str2.length()) {
-     //       return false;
-       // }
-
         for (int i = 0; i <= str1.length() - str2.length(); i++) {
             int count = 0;
             while (count < str2.length() && str1.charAt(i+count)== str2.charAt(count)) {
